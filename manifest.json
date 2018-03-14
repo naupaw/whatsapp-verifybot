@@ -1,0 +1,22 @@
+{
+    "name": "WhatsBOT",
+    "version": "1.1",
+    "description": "Pemalas !.",
+    "permissions": [
+        "<all_urls>",
+        "tts",
+        "tabs"
+    ],
+    "minimum_chrome_version": "14",
+    "content_scripts": [{
+        "matches": [
+            "https://web.whatsapp.com/*"
+        ],
+        "all_frames": true,
+        "js": [
+            "jquery.latest.min.js",
+            "content_script.js"
+        ]
+    }],
+    "manifest_version": 2
+}
